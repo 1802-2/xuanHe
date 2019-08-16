@@ -1,0 +1,809 @@
+body,html{
+	width: 100%;
+	min-width: 1220px;
+	height: 100%;
+	min-height: 650px;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+.x-box{
+	position: relative;
+	width: 100%;
+	min-width: 1220px;
+	height: 100%;
+	min-height: 650px;
+	overflow: hidden;
+}
+.x-list{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition:0.5s;
+}
+.x-list>li{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 右侧楼层 */
+
+/* 右侧初始动画效果 */
+@keyframes rightTransform{
+	from{
+		transform: translateX(220%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes shadow{
+	from{
+		box-shadow: 0 0 0 white;
+	}
+	to{
+		box-shadow: 0 0 5px white;
+	}
+}
+.x-rightlist{
+	height: 50%;
+	min-height: 325px;
+	position: fixed;
+	right: 2.5%;
+	top: 33%;
+	z-index: 999;
+	transform: translateX(220%);
+	animation: rightTransform 1s 0.5s forwards;
+}
+.x-rightlist-lists li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 34% 0px;
+	margin-left: 0.7vw;
+	transition: 1.5s;
+}
+.x-box .x-rightlist-lists>li:hover p{
+	transform-origin: center center;	
+	transform: scale(1.2);
+	background: #ff5400;
+	transition: 1s;	
+}
+.x-rightlist-lists>li>p{
+	transform-origin: center center;
+	height: 14px;
+	width: 14px;
+	background: #33343c;
+	border-radius: 50%;
+	transition: 1s;	
+}
+.x-rightnum{
+	position: absolute;
+	bottom: 0;
+}
+.x-rightnum p:nth-child(1){
+	font-size: 38px;
+	color: orange;
+	padding: 3px 0px;
+}
+.x-rightnum p:nth-child(2){
+	text-align: right;
+	margin-right: 3px;
+}
+.x-rightnum p:nth-child(2) span{
+	display: inline-block;
+	padding: 3px 0px;
+	border-top: 1px solid black;
+}
+
+
+/* 第一部分 导航 */
+@keyframes oneList{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.x-one-lists{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 10%;
+	width: 50%;
+	background: rgba(0,0,0,0.5);
+	animation: oneList 0.5s;
+}
+.x-one-lists ul{
+	height: 100%;
+}
+.x-one-lists li{
+	float: left;
+	height: 100%;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.x-one-lists li a{
+	color: white;
+}
+.x-one-lists li a:hover{
+	color: dimgray;
+}
+.x-one-lists li:nth-child(1){
+	background: #3b2612;
+}
+/* 第一部分中间主体 */
+@keyframes bodyTranform{
+	from{
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes towP{
+	from{
+		width: 0;
+	}
+	to{
+		width: 98%;
+	}
+}
+.x-one-body{
+	width: 45%;
+	height: 50%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	right: 0;
+	top: 25%;
+	transform: translateX(100%);
+	animation: bodyTranform 1s 1s forwards;
+	
+}
+.x-one-content{
+	height: 100%;
+	width: 78%;
+	padding: 3.8% 0px;
+	padding-left: 1.5%;
+	color: white;
+}
+.x-one-content button{
+	width: 19%;
+	height: 11%;
+	font-size: 2.5%;
+	margin-top: 0.5vw;
+	margin-left: 1.8vw;
+	border-radius: 5.8vh;
+	outline: none;
+	border: none;
+	background: #7c4e23;
+	color:white;
+}
+.x-one-content button i{
+	margin-left: 0.7vw;
+}
+
+.x-one-wenzi{
+	padding: 0px 1.5vw;
+}
+.x-one-wenzi p{
+	width: 0;
+	border-bottom: 1px solid white;
+	margin: 3px 0px;
+	animation: towP 1s 1.5s forwards;
+}
+.x-one-wenzi span{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	padding: 5px 0px;
+}
+.x-one-wenzi h1{
+	font-size: 3.8vw;
+	padding: 14px 0px;
+	letter-spacing: 2px;
+}
+.x-one-content ul{
+	height: 20%;
+	width: 100%;
+}
+.x-one-content ul li{
+	padding: 0px 1.5vw;
+	float: left;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+}
+.x-one-content ul li .iconfont{
+	margin-bottom: 8px;
+	font-size: 3vw;
+}
+/* 第一部分头部 */
+@keyframes oneHeader{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.x-one-header{
+	width: 100%;
+	height: 10%;
+	opacity: 0;
+	animation:oneHeader 1s 1s forwards;
+}
+.x-one-header>div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.x-one-header a{
+	margin: 0px 0.7vw;
+}
+@keyframes ijamp{
+	from{
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(-50%);
+	}
+}
+.x-ajamp{
+	animation: ijamp 0.2s alternate infinite;
+}
+.x-one-header a i{
+	font-size: 26px;
+	color: white;
+}
+.x-one-header img{
+	width: 8vw;
+}
+
+
+.x-content{
+	width: 86%;
+	height: 100%;
+	margin: 0 auto;
+}
+/* 二三四五部分导航 */
+.x-box-lists{
+	width: 100%;
+	min-width: 1220px;
+	height: 10%;
+	min-height: 65px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+	display: none;
+	z-index: 999;
+}
+.x-box-lists .x-content>div{
+	float: left;
+}
+.x-box-lists .x-content>div img{
+	width: 8vw;
+}
+.x-box-lists .x-box-list{
+	height: 100%;
+	width: 46%;
+	margin-left: 6%;
+}
+.x-box-lists .x-box-list ul{
+	width: 100%;
+	height: 100%;
+}
+.x-box-lists .x-box-list ul li{
+	float: left;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.x-box-list a{
+	color: black;
+}
+.x-box-list ul li:nth-child(1){
+	background: #d4c5b7;
+}
+.x-box-list ul li:nth-child(1) a{
+	color: white;
+}
+.x-box-list ul li:hover a{
+	color: white;
+}
+.x-box-list ul li:hover{
+	background: #d4c5b7;
+}
+
+.x-box-lists .x-content .x-smallbiao{
+	float: right;
+}
+.x-smallbiao{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.x-smallbiao a i{
+	font-size: 26px;
+	color: black;
+}
+.x-smallbiao a{
+	margin: 0px 0.7vw;
+}
+.x-listlogo{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/* 第二部分 */
+.x-tow{
+	background: #f5f5f5;
+	z-index: 2;
+}
+.x-tow-content{
+	width: 86%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+.x-tow-img{
+	height: 100%;
+	padding: 9% 0px;
+}
+.x-tow-img img:hover{
+	box-shadow: 0px 0px 30px #ccc;
+}
+.x-tow-img img{
+	height: 80%;
+	border-radius: 10px;
+}
+.x-tow-right{
+	height: 100%;
+	width: 40%;
+	padding: 9% 5%;
+}
+.x-tow-right p{
+	overflow: hidden;
+}
+.x-tow-right p span{
+	display: inline-block;
+	font-size: 14px;
+	color: gray;
+	line-height: 20px;
+	text-align: justify;
+}
+.x-tow-right img{
+	display: block;
+	margin: 34px 0px;
+}
+.x-tow-right img:nth-child(1){
+	height: 9.5%;
+}
+.x-tow-right img:nth-child(2){
+	height: 7%;
+}
+.x-tow-right button{
+	width: 24%;
+	height: 7%;
+	border-radius: 5.8vh;
+	outline: none;
+	border: none;
+	background: #7c4e23;
+	color:white;
+	margin-top: 6%;
+}
+.x-tow-zbot{
+	height: 24%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+/* 第二部分动画 */
+@keyframes imgright{
+	from{
+		transform: translateX(-200%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes imgright1{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes imgleft{
+	from{
+		transform: translateX(1000px);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes txttop{
+	from{
+		transform: translateY(150%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+@keyframes btnfadIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.x-imgright{
+	animation: imgright 1.5s;
+}
+.x-imgright1{
+	animation: imgright1 1.5s;
+}
+.x-imgleft{
+	animation: imgleft 1.5s;
+}
+.x-txttop{
+	animation: txttop 1.5s;
+}
+.x-btnfadIn{
+	animation: btnfadIn 3s;	
+}
+
+
+/* 主体第三部分 */
+@keyframes xthree{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.x-three-trans{
+	animation: xthree 1s;
+}
+.x-three>ul{
+	width: 100%;
+	height: 90%;
+	padding-top: 5%;
+}
+.x-three>ul>li{
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	position: relative;
+	z-index: 20;
+	transition: 0.5s;
+	background: #ccc;
+}
+.x-three>ul>li:nth-child(1){
+	width: 40%;
+}
+.x-three>ul>li:nth-child(even){
+	background: #bfbfbf;
+}
+.x-three-top{
+	width: 100%;
+	transition: 0.5s;
+}
+.x-three-top>div>p:nth-child(1){
+	font-size: 30px;
+}
+.x-three-top>div>p:nth-child(2){
+	font-size: 20px;
+}
+.x-three-top>div>p{
+	color: white;
+	padding: 8px 0px;
+}
+.x-three-top>div{
+	margin-bottom: 3vh;
+}
+.x-three-top img{
+	width: 18vw;
+	transition: 0.5s;
+}
+.x-three-bottom{
+	width: 100%;
+	height: 34%;
+	background: #e2e2e2;
+	display: flex;
+	align-items: center;
+	color: #7c4123;
+	position: absolute;
+	transition: 0.5s;
+	bottom: -100%;
+}
+
+
+.x-top{
+	bottom: 0;
+}
+.x-bottom{
+	bottom: -100%;
+}
+.x-three-toptop{
+	transform: translateY(-25%);
+}
+.x-three-toptop1{
+	transform: translateY(0);
+}
+.x-scale{
+	transform: scale(1.2);
+}
+.x-scale1{
+	transform: scale(1);
+}
+
+.x-three-bottom .x-three-button-num{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: -30%;
+}
+.x-three-bottom .x-three-button-num p{
+	font-size: 50px;
+}
+.x-three-bottom>div{
+	width: 70%;
+	margin: 0 auto;
+}
+.x-three-bottom button{
+	width: 110px;
+	height: 40px;
+	float: left;
+	margin-top: 30px;
+	background: #7c4123;
+	border-radius: 40px;
+	border: none;
+	outline: none;
+	color: white;
+}
+.x-three-bottom p{
+	width: 100%;
+	text-align: left;
+	font-size: 30px;
+}
+@keyframes popt{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.x-p-opt{
+	animation: popt 4s;
+}
+
+
+/* 第四部分*/
+.x-four-content{
+	width: 86%;
+	height: 100%;
+	padding: 5% 0;
+	display: flex;
+	margin: 0 auto;
+}
+.x-four-left,.x-four-right{
+	width: 50%;
+	height: 100%;
+}
+.x-four-left{
+	padding-top: 8%;
+}
+.x-four-left img{
+	display: block;
+	margin-top: 30px;
+}
+.x-four-left img:nth-child(1){
+	height: 18%;
+}
+.x-four-left img:nth-child(2){
+	height: 7%;
+}
+.x-four-left{
+	padding-right: 5%;
+}
+.x-four-left p{
+	margin-top: 20px;
+	overflow: hidden;
+	color: gray;
+}
+.x-four-left p span{
+	display: inline-block;
+	text-align: justify;
+	line-height: 24px;
+}
+.x-four-left button{
+	margin-top: 20px;
+	width: 19%;
+	height: 7%;
+	font-size: 2.5%;
+	border-radius: 5.8vh;
+	outline: none;
+	border: none;
+	background: #7c4e23;
+	color:white;
+}
+.x-four-leftjiao{
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	width: 3%;
+}
+.x-four-di{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 74%;
+} 
+
+
+.x-four-right{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+
+}
+.x-four-right-content{
+	height: 62%;
+	width: 100%;
+	margin-bottom: 8%;
+	position: relative;
+	overflow: hidden;
+}
+.x-four-right-content>img{
+	height: 100%;
+}
+@keyframes xrightmb{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0);
+	}
+}
+.x-rightmb{
+	animation: xrightmb 0.5s 1s forwards;
+}
+.x-four-right-mb{
+	width: 93.5%;
+	position: absolute;
+	bottom: 0;
+	text-align: justify;
+	background: rgba(0,0,0,0.5);
+	color:white;
+	font-size: 12px;
+	padding: 2% 3%;
+	overflow: hidden;
+	transform: translateY(100%)
+}
+.x-four-right-mb>div:nth-child(1){
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+}
+.x-four-right-mb>div:nth-child(1) span{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+}
+.x-four-right-mb span{
+	display: inline-block;
+	line-height: 25px;
+}
+.x-four-right-mb>div:nth-child(2) button{
+	display: inline-block;
+	color: white;
+	background: rgba(0,0,0,0.5);
+	border: none;
+	outline: none;
+	width: 10%;
+	border: 1px solid white;
+}
+
+/* 第五部分 */
+.x-five>img{
+	width: 100%;
+	height: 100%;
+}
+.x-five-left{
+	height: 100%;
+	width: 55%;
+	padding-top: 5%;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.x-five-content{
+	height: 100%;
+	width: 72%;
+	margin: 0 auto;
+}
+.x-five-content>img{
+	display: block;
+}
+.x-five-tlt1{
+	height: 9.5%;
+	margin-top: 8%;
+}
+.x-five-tlt2{
+	height: 7%;
+	margin-top: 6%;
+}
+.x-five-content>p{
+	margin-top: 5%;
+}
+.x-five-content>p>span{
+	display: inline-block;
+	text-indent: 30px;
+	line-height: 24px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+.x-five-content>.x-five1{
+	display: flex;
+	color: white;
+	font-size: 12px;
+	margin-top: 5%;
+}
+.x-five-content>.x-five1 ul li{
+	padding: 2.5%;
+	width: 100%;
+}
+.x-five-content .x-five1 i{
+	font-size: 20px;
+	padding: 0px 10px;
+}
+.x-five-content .x-five2{
+	position: absolute;
+	left: 10%;
+	bottom: 12%;
+}
+.x-five2 li{
+	float: left;
+	padding: 0 30px;
+	font-size: 12px;
+	border-right: 1px solid white;
+	color: white;
+}
+.x-five2 li:nth-child(3){
+	border: none;
+}
+.x-banquan{
+	position: absolute;
+	right: 10%;
+	bottom: 3%;
+	font-size: 12px;
+}
