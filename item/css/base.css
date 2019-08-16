@@ -26,17 +26,16 @@ a{
 	float: left;
 }
 .xx-box-lists .xx-content>div img{
-	width: 8vw;
+	width: 7vw;
 }
 .xx-box-lists .xx-box-list{
 	height: 100%;
 	width: 46%;
-	margin-left: 6%;
+	margin-left: 12%;
 }
-.xx-box-list ul{
+.xx-box-lists .xx-box-list ul{
 	width: 100%;
 	height: 100%;
-	margin: 0;
 }
 .xx-box-lists .xx-box-list ul li{
 	float: left;
@@ -48,6 +47,7 @@ a{
 }
 .xx-box-list a{
 	color: black;
+	font-size:1vw;
 }
 .xx-box-list ul li:nth-child(1){
 	background: #d4c5b7;
@@ -71,7 +71,7 @@ a{
 	align-items: center;
 }
 .xx-smallbiao a i{
-	font-size: 26px;
+	font-size: 1.5vw;
 	color: black;
 }
 .xx-smallbiao a{
@@ -81,6 +81,7 @@ a{
 	height: 100%;
 	display: flex;
 	align-items: center;
+}tems: center;
 }
 @keyframes ijamp{
 	from{
@@ -98,7 +99,6 @@ a{
 /*底部*/
 footer{
 	display: flex;
-	
 	width: 100%;
 	height: 42%;
 	background: #eee;
@@ -106,7 +106,7 @@ footer{
 }
 .footer-content{
 	width: 84%;
-	margin: 50px auto;
+	margin: 3vw auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -126,23 +126,23 @@ footer{
 }
 .footer_left>ul li a{
 	color: #000;
-	font-size: 16px;
+	font-size: 1.2vw;
 }
 .footer_left .txt{
 	margin-bottom: 8%;
 }
 .footer_left .txt p{
-	font-size: 12px;
+	font-size: 1vw;
 	color: #999;
-	line-height: 20px;
+	line-height: 1.5vw;
 }
 .footer_left .tel{
 	margin-bottom: 2.5vh;
 }
 .footer_left .tel p{
-	font-size: 12px;
+	font-size: 1vw;
 	color: #999;
-	line-height: 20px;
+	line-height: 1.5vw;
 }
 .footer_left .tel .tel-con{
 	display: flex;
@@ -162,14 +162,14 @@ footer{
 	box-sizing: border-box;
 }
 .footer_left .tel .tel-con a i{
-	font-size: 16px;
+	font-size: 1.2vw;
 	padding-right: 0.5vw;
 	box-sizing: border-box;
 }
 .footer_left .text{
-	font-size: 12px;
+	font-size: 0.8vw;
 	color: #999;
-	line-height: 20px;
+	line-height: 1.5vw;
 	
 }
 /*底部左边结束*/
@@ -186,11 +186,13 @@ footer{
 }
 .footer_right .img img{
 	display: inline-block;
-	width: 80%;
+	width: 8vw;
+	margin-right: 0.4vw;
 }
 .footer_right .img p{
 	color: #999;
-	font-size: 12px;
+	font-size: 1vw;
+	margin-top: 0.2vw;
 	text-align: center;
 }
 .footer_right a{
@@ -206,14 +208,14 @@ footer{
 }
 .footer_right a>i{
 	display: inline-block;
-	font-size: 18px;
+	font-size: 1.2vw;
 	margin-bottom: 5px;
 	box-sizing: border-box;
 }
 .footer_right a span{
 	display: inline-block;
-	font-size: 12px;
-	margin: 10px;
+	font-size: 0.8vw;
+	margin: 0.6vw;
 	transform-origin: center center;
 	transform: rotate(90deg);
 }

@@ -60,8 +60,8 @@ a{
 	animation: rightTransform 1s 0.5s forwards;
 }
 .x-rightlist-lists li{
-	width: 20px;
-	height: 20px;
+	width: 1.6vw;
+	height: 1.6vw;
 	border-radius: 50%;
 	border: 1px solid transparent;
 	display: flex;
@@ -79,8 +79,8 @@ a{
 }
 .x-rightlist-lists>li>p{
 	transform-origin: center center;
-	height: 14px;
-	width: 14px;
+	height: 1.2vw;
+	width: 1.2vw;
 	background: #33343c;
 	border-radius: 50%;
 	transition: 1s;	
@@ -90,17 +90,18 @@ a{
 	bottom: 0;
 }
 .x-rightnum p:nth-child(1){
-	font-size: 38px;
+	font-size: 2.8vw;
 	color: orange;
 	padding: 3px 0px;
 }
 .x-rightnum p:nth-child(2){
 	text-align: right;
-	margin-right: 3px;
+	margin-right: 0.3vw;
 }
 .x-rightnum p:nth-child(2) span{
 	display: inline-block;
 	padding: 3px 0px;
+	font-size: 1vw;
 	border-top: 1px solid black;
 }
 
@@ -136,6 +137,7 @@ a{
 }
 .x-one-lists li a{
 	color: white;
+	font-size: 1vw;
 }
 .x-one-lists li a:hover{
 	color: dimgray;
@@ -177,15 +179,15 @@ a{
 	height: 100%;
 	width: 78%;
 	padding: 3.8% 0px;
-	padding-left: 1.5%;
+	padding-left: 4%;
 	color: white;
 }
 .x-one-content button{
 	width: 19%;
 	height: 11%;
 	font-size: 2.5%;
-	margin-top: 0.5vw;
-	margin-left: 1.8vw;
+	margin-top: 1%;
+	margin-left: 2%;
 	border-radius: 5.8vh;
 	outline: none;
 	border: none;
@@ -193,11 +195,11 @@ a{
 	color:white;
 }
 .x-one-content button i{
-	margin-left: 0.7vw;
+	margin-left: 0.7%;
 }
 
 .x-one-wenzi{
-	padding: 0px 1.5vw;
+	padding: 0px 4%;
 }
 .x-one-wenzi p{
 	width: 0;
@@ -207,22 +209,23 @@ a{
 }
 .x-one-wenzi span{
 	display: inline-block;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 1.2vw;
+	line-height: 1.9vw;
 	letter-spacing: 2px;
 	padding: 5px 0px;
 }
 .x-one-wenzi h1{
 	font-size: 3.8vw;
-	padding: 14px 0px;
+	padding: 1vw 0px;
 	letter-spacing: 2px;
 }
 .x-one-content ul{
 	height: 20%;
 	width: 100%;
+	padding: 4% 4%;
 }
 .x-one-content ul li{
-	padding: 0px 1.5vw;
+	padding: 0px 1.5%;
 	float: left;
 	color: white;
 	font-size: 14px;
@@ -267,11 +270,11 @@ a{
 	animation: ijamp 0.2s alternate infinite;
 }
 .x-one-header a i{
-	font-size: 26px;
+	font-size: 1.5vw;
 	color: white;
 }
 .x-one-header img{
-	width: 8vw;
+	width: 7vw;
 }
 
 
@@ -297,12 +300,12 @@ a{
 	float: left;
 }
 .x-box-lists .x-content>div img{
-	width: 8vw;
+	width: 7vw;
 }
 .x-box-lists .x-box-list{
 	height: 100%;
 	width: 46%;
-	margin-left: 6%;
+	margin-left: 12%;
 }
 .x-box-lists .x-box-list ul{
 	width: 100%;
@@ -318,6 +321,7 @@ a{
 }
 .x-box-list a{
 	color: black;
+	font-size:1vw;
 }
 .x-box-list ul li:nth-child(1){
 	background: #d4c5b7;
@@ -341,7 +345,7 @@ a{
 	align-items: center;
 }
 .x-smallbiao a i{
-	font-size: 26px;
+	font-size: 1.5vw;
 	color: black;
 }
 .x-smallbiao a{
@@ -387,8 +391,9 @@ a{
 	display: inline-block;
 	font-size: 14px;
 	color: gray;
-	line-height: 20px;
+	line-height: 1.5vw;
 	text-align: justify;
+	font-size: 1vw;
 }
 .x-tow-right img{
 	display: block;
@@ -491,6 +496,7 @@ a{
 	width: 100%;
 	height: 90%;
 	padding-top: 5%;
+	background: #ccc;
 }
 .x-three>ul>li{
 	width: 20%;
@@ -517,10 +523,10 @@ a{
 	transition: 0.5s;
 }
 .x-three-top>div>p:nth-child(1){
-	font-size: 30px;
+	font-size: 2vw;
 }
 .x-three-top>div>p:nth-child(2){
-	font-size: 20px;
+	font-size: 1.5vw;
 }
 .x-three-top>div>p{
 	color: white;
@@ -572,15 +578,15 @@ a{
 	top: -30%;
 }
 .x-three-bottom .x-three-button-num p{
-	font-size: 50px;
+	font-size: 3.5vw;
 }
 .x-three-bottom>div{
 	width: 70%;
 	margin: 0 auto;
 }
 .x-three-bottom button{
-	width: 110px;
-	height: 40px;
+	width: 10vw;
+	height: 4vw;
 	float: left;
 	margin-top: 30px;
 	background: #7c4123;
@@ -592,7 +598,7 @@ a{
 .x-three-bottom p{
 	width: 100%;
 	text-align: left;
-	font-size: 30px;
+	font-size: 2vw;
 }
 @keyframes popt{
 	from{
@@ -643,7 +649,8 @@ a{
 .x-four-left p span{
 	display: inline-block;
 	text-align: justify;
-	line-height: 24px;
+	line-height: 1.5vw;
+	font-size: 1vw;
 }
 .x-four-left button{
 	margin-top: 20px;
@@ -720,7 +727,8 @@ a{
 }
 .x-four-right-mb span{
 	display: inline-block;
-	line-height: 25px;
+	line-height: 1.5vw;
+	font-size: 1vw;
 }
 .x-four-right-mb>div:nth-child(2) button{
 	display: inline-block;
@@ -768,14 +776,14 @@ a{
 .x-five-content>p>span{
 	display: inline-block;
 	text-indent: 30px;
-	line-height: 24px;
-	font-size: 14px;
+	line-height: 1.5vw;
+	font-size: 1vw;
 	color: rgba(0,0,0,0.7);
 }
 .x-five-content>.x-five1{
 	display: flex;
 	color: white;
-	font-size: 12px;
+	font-size: 0.8vw;
 	margin-top: 5%;
 }
 .x-five-content>.x-five1 ul li{
@@ -783,7 +791,7 @@ a{
 	width: 100%;
 }
 .x-five-content .x-five1 i{
-	font-size: 20px;
+	font-size: 1vw;
 	padding: 0px 10px;
 }
 .x-five-content .x-five2{
@@ -794,7 +802,7 @@ a{
 .x-five2 li{
 	float: left;
 	padding: 0 30px;
-	font-size: 12px;
+	font-size: 0.8vw;
 	border-right: 1px solid white;
 	color: white;
 }
@@ -805,5 +813,5 @@ a{
 	position: absolute;
 	right: 10%;
 	bottom: 3%;
-	font-size: 12px;
+	font-size: 0.8vw;
 }
