@@ -91,13 +91,13 @@
 	line-height: 3vw;
 }
 .detail-text-title .caret-top{
-	width: 3.2vw;
+	width:3.9vw;
 	height: 3vw;
 	background: url(../images/gen/02/caret-wrap.png) no-repeat center;
 }
 .detail-text-title .caret-top span{
 	display: block;
-	width: 3.1vw;
+	width: 3.9vw;
 	height: 3vw;
 	background: url(../images/gen/02/caret-inner.png) no-repeat center 1.5vw;
 }
@@ -116,6 +116,7 @@
 	display: flex;
 	color:#333333;
 	margin-right: 2vw;
+	
 }
 .detail-text-area-top>p span{
 	width: 4vw;
@@ -123,6 +124,7 @@
 .detail-text-area-top>ul>li{
 	text-indent:2vw;
 	margin-bottom: 1vw;
+	line-height: 2vw;
 }
 .detail-text-area-bottom{
 	display: flex;
