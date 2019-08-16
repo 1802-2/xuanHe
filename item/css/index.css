@@ -695,7 +695,7 @@ a{
 	}
 }
 .x-rightmb{
-	animation: xrightmb 0.5s 1.5s forwards;
+	animation: xrightmb 0.5s 1s forwards;
 }
 .x-four-right-mb{
 	width: 93.5%;
@@ -730,4 +730,80 @@ a{
 	outline: none;
 	width: 10%;
 	border: 1px solid white;
+}
+
+/* 第五部分 */
+.x-five>img{
+	width: 100%;
+	height: 100%;
+}
+.x-five-left{
+	height: 100%;
+	width: 55%;
+	padding-top: 5%;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.x-five-content{
+	height: 100%;
+	width: 72%;
+	margin: 0 auto;
+}
+.x-five-content>img{
+	display: block;
+}
+.x-five-tlt1{
+	height: 9.5%;
+	margin-top: 8%;
+}
+.x-five-tlt2{
+	height: 7%;
+	margin-top: 6%;
+}
+.x-five-content>p{
+	margin-top: 5%;
+}
+.x-five-content>p>span{
+	display: inline-block;
+	text-indent: 30px;
+	line-height: 24px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.7);
+}
+.x-five-content>.x-five1{
+	display: flex;
+	color: white;
+	font-size: 12px;
+	margin-top: 5%;
+}
+.x-five-content>.x-five1 ul li{
+	padding: 2.5%;
+	width: 100%;
+}
+.x-five-content .x-five1 i{
+	font-size: 20px;
+	padding: 0px 10px;
+}
+.x-five-content .x-five2{
+	position: absolute;
+	left: 10%;
+	bottom: 12%;
+}
+.x-five2 li{
+	float: left;
+	padding: 0 30px;
+	font-size: 12px;
+	border-right: 1px solid white;
+	color: white;
+}
+.x-five2 li:nth-child(3){
+	border: none;
+}
+.x-banquan{
+	position: absolute;
+	right: 10%;
+	bottom: 3%;
+	font-size: 12px;
 }

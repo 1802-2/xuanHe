@@ -43,16 +43,21 @@
 			
 		}
 		if(num==3){
-			$('.x-four-di').addClass('animated fadeInDown delay-1s')
-			$('.x-four-leftjiao').addClass('animated fadeInUp delay-1s')
-			$('.x-four-left img').addClass('animated fadeInLeft delay-1s')
-			$('.x-four-right').addClass('animated fadeInRight delay-1s')
+			$('.x-four-di').addClass('animated fadeInDown delay')
+			$('.x-four-leftjiao').addClass('animated fadeInUp delay')
+			$('.x-four-left img').addClass('animated fadeInLeft delay')
+			$('.x-four-right').addClass('animated fadeInRight delay')
 			$('.x-four-left p span').addClass('animated fadeInUp delay-2s')
 			$('.x-fourmb1').addClass('animated fadeInLeft delay-2s')
 			$('.x-fourmb2').addClass('animated fadeInRight delay-2s')
 			$('.x-fourmb3').addClass('animated fadeInUp delay-2s')
 			$('.x-four-left button').addClass('animated fadeIn delay-2s')
 			$('.x-four-right-mb').addClass('x-rightmb')
+		}
+		if(num==4){
+			$('.x-five-left').addClass('animated fadeInLeft')
+			$('.x-five>img').addClass('animated fadeIn')
+			$('.x-banquan').addClass('animated fadeIn')
 		}
 	}
 	$('.x-rightlist-lists>li').click(function(){
