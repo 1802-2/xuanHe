@@ -145,6 +145,7 @@ body{
 }
 .list-uLi img{
 	width: 100%;
+	overflow: hidden;
 }
 .list-uLi-box h2{
 	font-size:24px;
@@ -182,4 +183,7 @@ body{
 	font-size: 18px;
 	color: #7C4E23;
 	line-height: 35px;
+}
+.list-uLi img:hover{
+	transform: scale(1.1);
 }

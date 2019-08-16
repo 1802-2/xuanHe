@@ -1,6 +1,43 @@
-.M-cont-box{
-	height: 100%;
+#M-cont-box{
+	width: 100%;
+	min-width: 1220px;
 }
 .M-cont-header img{
 	width: 100%;
+	min-width: 1220px;
+}
+.M-cont-text{
+	width: 100%;
+	min-width: 1220px;
+	height: 9vw;
+	background: url(../images/mao/SINCE.png) no-repeat center center;
+	background-size:31.3vw 9vw;
+	margin-top: 3.6vw;
+}
+.M-cont-text p{
+	text-align: center;
+}
+.M-cont-text p:nth-child(1){
+	font-size: 2.5zvw;
+	color: #7C4E23;
+	padding-top: 3.6vw;
+}
+.M-cont-text p:nth-child(2){
+	font-size: 1.8vw;
+	padding-top: 3vw;
+}
+.M-cont-ulist{
+	width: 100%;
+	margin-top: 3vw;
+}
+.M-cont-Ul{
+	width: 100%;
+}
+.M-cont-Ul li{
+	width: 33%;
+	border: 1px solid #ccc;
+}
+.M-cont-Ul li img{
+	width: 4.1vw;
+	height: 3.5vw; 
 }
