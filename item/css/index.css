@@ -7,6 +7,7 @@ body,html{
 a{
 	display: inline-block;
 	text-decoration: none;
+	height: 100%;
 }
 .x-box{
 	position: relative;
@@ -138,6 +139,11 @@ a{
 .x-one-lists li a{
 	color: white;
 	font-size: 1vw;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 }
 .x-one-lists li a:hover{
 	color: dimgray;
@@ -192,12 +198,16 @@ a{
 	outline: none;
 	border: none;
 	background: #7c4e23;
-	color:white;
 }
 .x-one-content button i{
 	margin-left: 0.7%;
 }
-
+button a{
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .x-one-wenzi{
 	padding: 0px 4%;
 }
@@ -228,7 +238,7 @@ a{
 	padding: 0px 1.5%;
 	float: left;
 	color: white;
-	font-size: 14px;
+	font-size: 1.2vw;
 	text-align: center;
 }
 .x-one-content ul li .iconfont{
@@ -263,7 +273,7 @@ a{
 		transform: translateY(0);
 	}
 	to{
-		transform: translateY(-50%);
+		transform: translateY(-20%);
 	}
 }
 .x-ajamp{
@@ -322,6 +332,11 @@ a{
 .x-box-list a{
 	color: black;
 	font-size:1vw;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
 }
 .x-box-list ul li:nth-child(1){
 	background: #d4c5b7;
@@ -350,6 +365,8 @@ a{
 }
 .x-smallbiao a{
 	margin: 0px 0.7vw;
+	display: flex;
+	align-items: center;
 }
 .x-listlogo{
 	height: 100%;
