@@ -1,10 +1,15 @@
 .page-banner{
 	width: 100%;
-	
 	min-width: 1200px;
 	height: 8vw;
 	overflow: hidden;
 	position: relative;
+}
+
+.banner-img>li img{
+	display: block;
+	width: 100%;
+	
 }
 .pageyTypearea{
 	width: 86%;
@@ -12,6 +17,7 @@
 	margin: 0 auto;
 }
 .banner-img>li{
+	width: 100%;
 	position: absolute;
 	top:0;
 	left: 0;
@@ -27,11 +33,13 @@
 	left:50%;
 	transform: translate(-50%,-50%);
 	color:#fffefe;
-	font-weight: bold;
+	
 	font-family: MicrosoftYaHeiLight;
+	font-size: 2vw;
 }
 .banner-title h1{
 	margin-bottom: 1vw;
+	
 }
 .page-title{
 	font-size: 2vw;
