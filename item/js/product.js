@@ -45,6 +45,7 @@ $(function(){
 	//点击切换数据
 	$(".product-btnList").on("click","li",function(){
 		$('.product-list ul').css({"left":0});
+		
 		$(this).addClass("active").siblings().removeClass("active");
 		let index=$(this).index();
 		
@@ -79,5 +80,6 @@ $(function(){
 			//分页器
 				productData.page(num);			
 		});
+		return false;
 	})
 })

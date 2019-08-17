@@ -18,7 +18,7 @@ class Product {
 		}
 		page(num){
 			
-			var obj = {
+			let obj = {
 				wrapid:'page', //页面显示分页器容器id
 				total:num,//总条数
 				pagesize:4,//每页显示10条

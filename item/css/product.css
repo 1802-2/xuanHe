@@ -127,7 +127,7 @@
 .product-type:after {
 	content:"";
 	display:block;
-	width:0;
+	width:2vw;
 	transition:1s;
 	-ms-transition:1s;
 	border: 1px solid  #7c4e23;
@@ -170,7 +170,7 @@
 }
 
 .product-item:hover .product-type:after {
-	width:100%;
+	width:4vw;
 	
 }
 .product-item:hover figure img{

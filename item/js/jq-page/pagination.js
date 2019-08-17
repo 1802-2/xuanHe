@@ -34,10 +34,19 @@ var pagination = pagination || {};
         },
         bindEvent: function(){
             var that = this;
+			
+			
+			 //数据切换初始页
+			 $(".product-btnList").on("click","li",function(){
+				  that._currentPage=1;
+				  console.log( that._currentPage)
+			 })
+			 
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
                 that._currentPage = parseInt($(this).text());
                 that._cb(that._currentPage);
+				console.log( that._currentPage)
                 isshowMore.call(that);
             });
 
@@ -53,6 +62,7 @@ var pagination = pagination || {};
                 }else{
                     $('#pagination-prev').removeClass('pagination-disabled');
                 }
+				console.log("1:"+that._currentPage)
                 that._cb(that._currentPage);
                 isshowMore.call(that);
             });
@@ -70,7 +80,9 @@ var pagination = pagination || {};
                 }else{
                     $('#pagination-next').removeClass('pagination-disabled')
                 }
+					console.log("2:"+that._currentPage)
                 that._cb(that._currentPage);
+			
                 isshowMore.call(that);
             });
             isshowMore.call(this);
