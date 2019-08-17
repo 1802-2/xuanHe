@@ -1,0 +1,25 @@
+
+	#pagination-next,
+	#pagination-prev {
+	  width:3vw;
+	  height:3vw;
+	  font-weight: bolder;
+	  border:1px solid #1a1e2a;
+	  	cursor: pointer;
+		font-size: 2vw;
+	}
+	#pagination-next:hover,
+	#pagination-prev:hover{
+		background: #7c4e23;
+		color: #fff;
+	}
+	.pagination-wrap li{
+		width:3vw;
+		height:3vw;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	
+	.pagination-wrap li.pagination-current{
+		color: #7c4e23;
+	}
