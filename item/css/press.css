@@ -29,36 +29,32 @@ body{
 	margin-top: 48px;
 }
 .M-floor-box{
-	width: 86%;
-	border: 1px solid #ccc;
+	width: 86vw;
+	
 	margin:  0 auto;
 }
-.M-floor-header{
-	width: 100%;
-}
-.v-list{
-	width: 100%;
+.v-list .list{
+	display:flex;
+	justify-content: center;
 }
 .list li{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-.list .active{
 	width: 131px;
 	height: 51px;
+	justify-content: center;
+	align-items: center;
 	font-size: 25px;
+	margin-right: 2vw;
+}
+.list li.active{
+	
+	
 	background: #7c4e23;
 	border-radius:25px;
 	line-height: 51px;
 	color: #ffffff;
 }
-.list p{
-	text-decoration: none;
-	color: #999999;
-	font-size:24px ;
-}
+
 .floor-out{
 	width: 100%;
 	margin-top: 43px;
@@ -120,22 +116,40 @@ body{
 	background: #7C4E23;
 	color: #fff;
 }
-
+.floor-ul-List-wrap{
+	width: 86vw;
+	height: 78vw;
+	overflow: hidden;
+	position: relative;
+}
+.floor-ul-List{
+	display: flex;
+	height: 78vw;
+	position: absolute;
+}
 .M-List{
-	width: 100%;
+	width: 86vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 1vw;
 }
+.M-cont-UI li{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
 .list-uLi{
 	margin-top: 3.2vw;
 	background: #fff;
+	width: 26vw;
+	height: 34vw;
+	overflow: hidden;
 }
 .list-uLi>div{
-	width: 26.7vw;
-	height: 34.3vw;
-	/*border: 1px solid #ccc;*/
+	width: 26vw;
+	height: 34vw;
+	
 }
 
 
@@ -143,9 +157,16 @@ body{
 	box-sizing: border-box;
 	padding:40px 20px 0px 20px;
 }
-.list-uLi img{
+.list-uLi figure{
 	width: 100%;
+	height: 19vw;
 	overflow: hidden;
+}
+.list-uLi figure img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: 1s;	
 }
 .list-uLi-box h2{
 	font-size:24px;
@@ -184,6 +205,10 @@ body{
 	color: #7C4E23;
 	line-height: 35px;
 }
-.list-uLi img:hover{
+.list-uLi:hover img{
 	transform: scale(1.1);
+	
+}
+#page{
+	margin:2vw 0;
 }

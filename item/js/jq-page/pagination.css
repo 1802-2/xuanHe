@@ -1,4 +1,14 @@
 
+	#page{
+		display: flex;
+		 line-height:3vw;
+		 text-align: center;
+		 justify-content: center;
+		 
+	}
+	.pagination-wrap{
+		display: flex;
+	}
 	#pagination-next,
 	#pagination-prev {
 	  width:3vw;

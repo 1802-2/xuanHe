@@ -1,10 +1,12 @@
 #M-cont-box{
 	width: 100vw;
 	min-width: 1220px;
+	background: #fff;
 }
 .M-cont-header img{
 	width: 100vw;
 	min-width: 1220px;
+	background: #fff;
 }
 .M-cont-text{
 	width: 100vw;
@@ -29,24 +31,27 @@
 .M-cont-ulist{
 	width: 100vw;
 	margin-top: 3vw;
+	background: #fff;
+	height: 20vw;
 }
 .M-cont-Ul{
-	width: 100vvw;
+	display: flex;
+	width: 100vw;
 	margin-top:5vw;
+	background: #fff;
 }
 .M-cont-Ul li{
 	width: 33vw;
-	/*border: 1px solid #ccc;*/
-	float: left;
-	display: table-cell; 
-	vertical-align:middle;
-}
-.M-cont-Ul li img{
-	width: 4.1vw;
-	height: 3.5vw; 
-	vertical-align:middle;
+	
+	justify-content: center;
 	
 }
+.M-cont-Ul li img{
+	display: block;
+	width: 4.1vw;
+	height: 3.5vw; 
+	margin: 0 auto;
+}	
 .M-cont-Ul li p{
 	display: block;
 	text-align: center;
@@ -62,3 +67,8 @@
 	text-align: center;
 	font-size: 1.6vw;
 }
+#allMap{
+		width:100vw;
+		height:70vh;
+		margin:0 auto;
+	}
