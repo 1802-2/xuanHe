@@ -7,11 +7,7 @@ class Product {
 				url:"../data/product.json",
 				type:"get",
 				success:(res)=>{
-					if(attr!="all"){
-						cb&&cb(res[attr])
-					}else{
-						cb&&cb(res)
-					}
+					cb&&cb(res[attr])
 					
 				}
 			})

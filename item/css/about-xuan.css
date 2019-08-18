@@ -33,7 +33,6 @@
 	left:50%;
 	transform: translate(-50%,-50%);
 	color:#fffefe;
-	
 	font-family: MicrosoftYaHeiLight;
 	font-size: 2vw;
 }
@@ -42,12 +41,17 @@
 	
 }
 .page-title{
+	width: 31vw;
+	height: 9vw;
+	line-height: 9vw;
 	font-size: 2vw;
 	font-weight: bold;
 	color: #7c4e23;
 	text-align: center;
-	margin: 7vw 0 5vw;
+	margin: 2vw auto;
 	font-family: MicrosoftYaHeiLight;
+	background: url(../images/gen/03/bg.png) no-repeat ;
+	background-size: cover;
 }
 .page-detail-text{
 	padding: 0 2vw;
