@@ -7,8 +7,8 @@ class Product {
 				url:"../data/product.json",
 				type:"get",
 				success:(res)=>{
-					cb&&cb(res[attr])
-					
+	
+					cb&&cb(res[attr])				
 				}
 			})
 		}

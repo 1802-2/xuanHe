@@ -8,7 +8,7 @@ $(function(){
 	
 	//初始化数据
 	productData.getdata(attr[0],function(res){
-		console.log(res)
+		
 		let num=0;//计算多少条数据；
 		//清空数据容器
 		$(".product-list ul").html("")
@@ -22,7 +22,7 @@ $(function(){
 			
 		})
 		$(".product-list").css({width:num/4*86+"vw"})
-	console.log(num)
+
 	//分页器
 		productData.page(num);
 		
@@ -39,7 +39,7 @@ $(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		let index=$(this).index();
 		productData.getdata(attr[index],function(res){
-			console.log(res)
+			
 			$('.page-body-title h1').html(res.title)
 			$('.page-body-title').css({"background":`url(${res.bg}) center no-repeat`})
 			res.list.forEach((item,index)=>{
@@ -49,7 +49,6 @@ $(function(){
 			})
 			
 			
-			console.log(num)
 			$(".product-list").css({width:num/4*86+"vw"})
 			//分页器
 				productData.page(num);			
