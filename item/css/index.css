@@ -834,7 +834,7 @@ button a{
 }
 .x-five-content>p>span{
 	display: inline-block;
-	text-indent: 30px;
+	text-indent: 2vw;
 	line-height: 1.5vw;
 	font-size: 1vw;
 	color: rgba(0,0,0,0.7);
@@ -857,6 +857,9 @@ button a{
 	position: absolute;
 	left: 10%;
 	bottom: 12%;
+}
+.x-five1 img{
+	height: 7vw;
 }
 .x-five2 li{
 	float: left;
