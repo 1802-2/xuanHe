@@ -8,6 +8,7 @@ $(function(){
 	
 	//初始化数据
 	productData.getdata(attr[0],function(res){
+		console.log(res)
 		let num=0;//计算多少条数据；
 		//清空数据容器
 		$(".product-list ul").html("")
