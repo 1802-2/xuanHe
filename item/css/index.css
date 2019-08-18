@@ -29,7 +29,39 @@ a{
 	width: 100%;
 	height: 100%;
 }
-
+/* btn滑动动画 */
+button{
+	overflow: hidden;
+}
+button>a{
+	position: relative;
+}
+button>a::before{
+	content:"";
+	height: 100%;
+	width: 60%;
+	position: absolute;
+	left: -70%;
+	top:0;
+	transition: 0.5s;
+	background: rgba(0,0,0,0.5);
+}
+button>a::after{
+	content: "";
+	height: 100%;
+	width: 60%;
+	position: absolute;
+	right: -70%;
+	top:0;
+	transition: 0.5s;
+	background: rgba(0,0,0,0.5);
+}
+button>a:hover::before{
+	left: -10%;
+}
+button>a:hover::after{
+	right: -10%;
+}
 
 /* 右侧楼层 */
 
@@ -89,6 +121,8 @@ a{
 .x-rightnum{
 	position: absolute;
 	bottom: 0;
+	font-weight: bold;
+	width: 100%;
 }
 .x-rightnum p:nth-child(1){
 	font-size: 2.8vw;
@@ -97,7 +131,7 @@ a{
 }
 .x-rightnum p:nth-child(2){
 	text-align: right;
-	margin-right: 0.3vw;
+	margin-right: -5px;
 }
 .x-rightnum p:nth-child(2) span{
 	display: inline-block;
@@ -146,7 +180,7 @@ a{
 	align-items: center;
 }
 .x-one-lists li a:hover{
-	color: dimgray;
+	background: #3b2612;
 }
 .x-one-lists li:nth-child(1){
 	background: #3b2612;
@@ -228,6 +262,7 @@ button a{
 	font-size: 3.8vw;
 	padding: 1vw 0px;
 	letter-spacing: 2px;
+	font-weight: bold;
 }
 .x-one-content ul{
 	height: 20%;
@@ -244,6 +279,13 @@ button a{
 .x-one-content ul li .iconfont{
 	margin-bottom: 8px;
 	font-size: 3vw;
+}
+.x-bannerimg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 /* 第一部分头部 */
 @keyframes oneHeader{
@@ -800,7 +842,7 @@ button a{
 .x-five-content>.x-five1{
 	display: flex;
 	color: white;
-	font-size: 0.8vw;
+	font-size: 1vw;
 	margin-top: 5%;
 }
 .x-five-content>.x-five1 ul li{
@@ -808,7 +850,7 @@ button a{
 	width: 100%;
 }
 .x-five-content .x-five1 i{
-	font-size: 1vw;
+	font-size: 1.5vw;
 	padding: 0px 10px;
 }
 .x-five-content .x-five2{
