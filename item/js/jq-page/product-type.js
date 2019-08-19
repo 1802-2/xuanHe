@@ -7,18 +7,14 @@ class Product {
 				url:"../data/product.json",
 				type:"get",
 				success:(res)=>{
-					if(attr!="all"){
-						cb&&cb(res[attr])
-					}else{
-						cb&&cb(res)
-					}
-					
+	
+					cb&&cb(res[attr])				
 				}
 			})
 		}
 		page(num){
 			
-			var obj = {
+			let obj = {
 				wrapid:'page', //页面显示分页器容器id
 				total:num,//总条数
 				pagesize:4,//每页显示10条

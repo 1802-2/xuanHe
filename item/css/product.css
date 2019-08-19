@@ -26,7 +26,7 @@
 	min-width: 1000px;
 	height: 9vw;
 	text-align:center;
-	background:url(../images/gen/01/banner.png) center no-repeat;
+	background:url(../images/gen/01/1.jpg) center no-repeat;
 	box-sizing:border-box;
 	padding:3vw 0;
 	font-size: 2vw;
@@ -127,7 +127,7 @@
 .product-type:after {
 	content:"";
 	display:block;
-	width:0;
+	width:2vw;
 	transition:1s;
 	-ms-transition:1s;
 	border: 1px solid  #7c4e23;
@@ -170,7 +170,7 @@
 }
 
 .product-item:hover .product-type:after {
-	width:100%;
+	width:4vw;
 	
 }
 .product-item:hover figure img{

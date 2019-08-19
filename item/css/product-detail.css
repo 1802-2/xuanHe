@@ -2,17 +2,19 @@
 	width: 86%;
 	margin: 0 auto;
 	min-width: 1000px;
+	
 }
 .page-body{
 	width: 100%;
+	
 }
 .page-banner{
 	width: 100%;
 	height: 41vw;
 	position: relative;
-	background: url(../images/gen/02/banner-1.png) no-repeat;
+	background: url(../images/gen/02/产品-三级.jpg) no-repeat;
 	overflow:hidden;
-	
+	background-size: 100% 100%;
 }
 .page-banner-text{
 	width: 47vw;
@@ -42,6 +44,10 @@
 }
 
 /*  */
+.page-detail-wrap{
+	background: url(../images/gen/03/bg.png) no-repeat 0px 0px;
+	background-size:contain;
+}
 .page-nav{
 	margin: 2vw 0;
 }
@@ -91,13 +97,13 @@
 	line-height: 3vw;
 }
 .detail-text-title .caret-top{
-	width:3.9vw;
+	width:3.6vw;
 	height: 3vw;
 	background: url(../images/gen/02/caret-wrap.png) no-repeat center;
 }
 .detail-text-title .caret-top span{
 	display: block;
-	width: 3.9vw;
+	width: 3.6vw;
 	height: 3vw;
 	background: url(../images/gen/02/caret-inner.png) no-repeat center 1.5vw;
 }
@@ -161,14 +167,12 @@
 .detail-img>figure{
 	width: 28vw;
 	height: 38vw;
-	overflow: hidden;
-	
-	position: relative;
 	margin-right: 1vw;
 }
 .detail-img>figure img{
-	position: absolute;
-	left: -180%;
+	display: block;
+	width:100% ;
+	height: 100%;
 }
 
 .detail-img ul li{

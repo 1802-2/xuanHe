@@ -5,6 +5,7 @@
 * @Last Modified time: 2018-07-09 16:39:05
 */
 var pagination = pagination || {};
+
 (function(){
     function Pagination(){
     }
@@ -13,6 +14,7 @@ var pagination = pagination || {};
             /*显示分页器的容器元素id*/
             this._wrapid = '#'+obj.wrapid;
             this._total = obj.total;
+			
             this._pagesize = obj.pagesize;
             this._currentPage = obj.currentPage;
             /*页码改变的回调函数*/
@@ -34,15 +36,23 @@ var pagination = pagination || {};
         },
         bindEvent: function(){
             var that = this;
+		
+		
+		
+			 $(that._wrapid).off("click")
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
                 that._currentPage = parseInt($(this).text());
                 that._cb(that._currentPage);
+				console.log( that._currentPage)
                 isshowMore.call(that);
             });
-
+			
+			
             /*上一页*/
-            $(that._wrapid).on('click','#pagination-prev',function(){
+            $(that._wrapid).on('click','#pagination-prev',function(ev){
+				
+				
                 if($(this).hasClass('pagination-disabled')){
                     return;
                 }
@@ -55,6 +65,7 @@ var pagination = pagination || {};
                 }
                 that._cb(that._currentPage);
                 isshowMore.call(that);
+				return false;
             });
 
             /*下一页*/
@@ -70,7 +81,9 @@ var pagination = pagination || {};
                 }else{
                     $('#pagination-next').removeClass('pagination-disabled')
                 }
+	
                 that._cb(that._currentPage);
+			
                 isshowMore.call(that);
             });
             isshowMore.call(this);
