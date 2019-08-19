@@ -380,10 +380,8 @@ button a{
 	justify-content: center;
 	align-items: center;
 }
-.x-box-list ul li:nth-child(1){
+.x-box-list .xx-active{
 	background: #d4c5b7;
-}
-.x-box-list ul li:nth-child(1) a{
 	color: white;
 }
 .x-box-list ul li:hover a{
