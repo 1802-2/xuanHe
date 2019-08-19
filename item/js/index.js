@@ -1,12 +1,13 @@
-    let them=new Date()
-	let count=0;
-	let ul=$('.x-list')
+    window.onload=function(){
+	var them=new Date();
+	var count=0;
+	var ul=$('.x-list');
 	$('.x-rightlist-lists>li').eq(count).css({
-		border:'1px solid #ff5400'
-	})
+		border:"1px solid #ff5400"
+	});
 	$('.x-rightlist-lists>li').eq(count).find('p').css({
-		background:"#ff5400",
-		transform:" scale(1.1)",
+		background: "#ff5400",
+		transform: "scale(1.1)",
 		transformOrigin: "center,center"
 	})
 	function color(num){
@@ -31,7 +32,7 @@
 			$('.x-box-lists').fadeOut()
 		}
 		if(num==1){
-			$('.x-tow-img img').addClass('x-imgright')
+			$('.x-tow-img').addClass('x-imgright')
 			$('.x-tow-right img').addClass('x-imgleft')
 			$('.x-tow-zbot').addClass('x-imgright1')
 			$('.x-tow-right p span').addClass('x-txttop')
@@ -71,7 +72,8 @@
 	})
 	
 	function wheelFn(e){
-		let now=new Date()
+		console.log(1)
+		var now=new Date()
 		var e=e||window.event
 		if(now-them>500){
 		if(e.detail){
@@ -102,8 +104,9 @@
 		them=new Date()	
 	}
   }
+    document.body.onmousewheel=wheelFn	
 	document.body.addEventListener("DOMMouseScroll",wheelFn)
-	document.body.onmousewheel=wheelFn	
+	
 	
 	$('.x-one-header a').hover(function(){
 		$(this).addClass('x-ajamp')
@@ -128,6 +131,7 @@
 		$(this).find('.x-three-top img').addClass('x-scale').removeClass('x-scale1').parent().parent().siblings().find('img').addClass('x-scale1').removeClass('x-scale')
 		$(this).find('.x-three-top').addClass('x-three-toptop').removeClass('x-three-toptop1').parent().siblings().find('.x-three-top').removeClass('x-three-toptop').addClass('x-three-toptop1')
 	})
+	}
 	
 	
 	
