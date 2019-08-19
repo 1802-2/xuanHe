@@ -56,10 +56,8 @@ a{
 	color: black;
 	font-size:1vw;
 }
-.xx-box-list ul li:nth-child(1){
+.xx-box-list .xx-active{
 	background: #d4c5b7;
-}
-.xx-box-list ul li:nth-child(1) a{
 	color: white;
 }
 .xx-box-list ul li:hover a{
