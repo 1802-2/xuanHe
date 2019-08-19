@@ -39,7 +39,7 @@
 							'<a href="javascript:;">'+item["product-detail"]+'</a>'+
 						'</p>'+
 						'<div class="go-product">'+
-							'<a href="javascrip:;">MORE</a><span class="carte-right"></span>'+
+							'<a href="./product-detail.html">MORE</a><span class="carte-right"></span>'+
 								
 						'</div>	'+	
 							

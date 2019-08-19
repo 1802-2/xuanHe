@@ -179,6 +179,7 @@ var pagination = pagination || {};
 						$(v).text("0"+$(v).text())
 					}
 				})
+			
             }
 			
 			
