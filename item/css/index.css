@@ -30,13 +30,22 @@ a{
 	height: 100%;
 }
 /* btn滑动动画 */
-button{
+.x-btn{
 	overflow: hidden;
 }
-button>a{
+.x-btn>a{
+	display: flex;
+	color:white;
+	justify-content: center;
 	position: relative;
+	z-index: 999;
+	align-items: center;
+	font-size: 1vw;	
 }
-button>a::before{
+.x-btn>a i{
+	display: inline-block;
+}
+.x-btn>a::before{
 	content:"";
 	height: 100%;
 	width: 60%;
@@ -46,7 +55,7 @@ button>a::before{
 	transition: 0.5s;
 	background: rgba(0,0,0,0.5);
 }
-button>a::after{
+.x-btn>a::after{
 	content: "";
 	height: 100%;
 	width: 60%;
@@ -56,10 +65,10 @@ button>a::after{
 	transition: 0.5s;
 	background: rgba(0,0,0,0.5);
 }
-button>a:hover::before{
+.x-btn>a:hover::before{
 	left: -10%;
 }
-button>a:hover::after{
+.x-btn>a:hover::after{
 	right: -10%;
 }
 
@@ -150,6 +159,7 @@ button>a:hover::after{
 		transform: translateX(0);
 	}
 }
+
 .x-one-lists{
 	position: absolute;
 	bottom: 0;
@@ -158,6 +168,7 @@ button>a:hover::after{
 	width: 50%;
 	background: rgba(0,0,0,0.5);
 	animation: oneList 0.5s;
+	
 }
 .x-one-lists ul{
 	height: 100%;
@@ -222,7 +233,7 @@ button>a:hover::after{
 	padding-left: 4%;
 	color: white;
 }
-.x-one-content button{
+.x-one-content .x-btn{
 	width: 19%;
 	height: 11%;
 	font-size: 2.5%;
@@ -233,14 +244,8 @@ button>a:hover::after{
 	border: none;
 	background: #7c4e23;
 }
-.x-one-content button i{
+.x-one-content .x-btn i{
 	margin-left: 0.7%;
-}
-button a{
-	color:white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .x-one-wenzi{
 	padding: 0px 4%;
@@ -286,6 +291,7 @@ button a{
 	position: absolute;
 	left: 0;
 	top: 0;
+	z-index: -999;
 }
 /* 第一部分头部 */
 @keyframes oneHeader{
@@ -462,7 +468,7 @@ button a{
 .x-tow-right img:nth-child(2){
 	height: 7%;
 }
-.x-tow-right button{
+.x-tow-right .x-btn{
 	width: 24%;
 	height: 7%;
 	border-radius: 5.8vh;
@@ -606,9 +612,9 @@ button a{
 	position: absolute;
 	transition: 0.5s;
 	bottom: -100%;
+	left: 0;
+	z-index: 9999;
 }
-
-
 .x-top{
 	bottom: 0;
 }
@@ -641,7 +647,7 @@ button a{
 	width: 70%;
 	margin: 0 auto;
 }
-.x-three-bottom button{
+.x-three-bottom .x-btn{
 	width: 10vw;
 	height: 4vw;
 	float: left;
@@ -709,7 +715,7 @@ button a{
 	line-height: 1.5vw;
 	font-size: 1vw;
 }
-.x-four-left button{
+.x-four-left .x-btn{
 	margin-top: 20px;
 	width: 19%;
 	height: 7%;
@@ -737,7 +743,7 @@ button a{
 .x-four-right{
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
+	align-items: center;
 
 }
 .x-four-right-content{
@@ -748,7 +754,7 @@ button a{
 	overflow: hidden;
 }
 .x-four-right-content>img{
-	height: 100%;
+	width:100%;
 }
 @keyframes xrightmb{
 	from{
@@ -762,7 +768,7 @@ button a{
 	animation: xrightmb 0.5s 1s forwards;
 }
 .x-four-right-mb{
-	width: 93.5%;
+	width: 95%;
 	position: absolute;
 	bottom: 0;
 	text-align: justify;
@@ -787,7 +793,7 @@ button a{
 	line-height: 1.5vw;
 	font-size: 1vw;
 }
-.x-four-right-mb>div:nth-child(2) button{
+.x-four-right-mb>div:nth-child(2) .x-btn{
 	display: inline-block;
 	color: white;
 	background: rgba(0,0,0,0.5);
