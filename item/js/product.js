@@ -4,7 +4,7 @@ $(function(){
 	let productData=new Product ();//获取类；
 	let attr=["all","latex","noopsyche","health","non-woven"];
 	
-	
+	console.log($(".product-list"))
 	
 	//初始化数据
 	productData.getdata(attr[0],function(res){
