@@ -22,6 +22,15 @@ $(function(){
 	//分页器
 		page(num);
 		
+		//详情页
+		
+		$(".product-list>ul li").on("click","img",function(){
+			location.href="../pages/product-detail.html";
+		})
+		$(".product-list>ul li .go-product").on("click","a",function(){
+			console.log(111)
+			location.href="../pages/product-detail.html";
+		})
 	});
 	
 	
@@ -45,9 +54,18 @@ $(function(){
 			
 			
 			$(".product-list").css({width:num/4*86+"vw"})
+			
 			//分页器
-			page(num);			
+			page(num);	
+				
+			//详情页
+			$(".product-list>ul li").on("click","img",function(){
+				location.href="../pages/product-detail.html";
+			})
+			
 		});
 		return false;
 	})
+	
+	
 })
