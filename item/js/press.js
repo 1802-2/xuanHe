@@ -1,7 +1,7 @@
 	
 	let attr=["newsCenter","industry"];
 	getDat(attr[0])
-	
+	console.log($)
 	
 	//切换新闻中心或行业动态
 		$(".list").on("click","li",function(){
@@ -27,7 +27,8 @@
 					$(".floor-ul-List").css({
 						width: num * 86 + "vw"
 					})
-	
+	.3
+	3
 					$(`<ul class='M-List'></ul`).appendTo(".floor-ul-List")
 				}
 	
@@ -65,21 +66,35 @@
 				sp=1;
 				ipu++;
 			}
-			$(".M-List").eq(ipu).append(`<li class="list-uLi">
-		 		<div>
-		 			<figure><img src="${item.src}"/></figure>
-		 			
-			 		<div class="list-uLi-box">
-			 			<h2>${item.title}</h2>
-			 			<span>2019-08-22</span>
-			 			<span class="width-55"></span>
-			 			<p>智能家居和普通家具究竟有何不同?  近两年全球正在悄悄的燃起一场智能化的革命</p>
-			 			<a href="#" class="floor-xbox-btn">
-							MORE
-						</a>
-			 		</div>
-		 		</div>
-		 	</li>`);
+//			$(".M-List").eq(ipu).append(`<li class="list-uLi">
+//		 		<div>
+//		 			<figure><img src="${item.src}"/></figure>
+//			 		<div class="list-uLi-box">
+//			 			<h2>${item.title}</h2>
+//			 			<span>2019-08-22</span>
+//			 			<span class="width-55"></span>
+//			 			<p>智能家居和普通家具究竟有何不同?  近两年全球正在悄悄的燃起一场智能化的革命</p>
+//			 			<a href="#" class="floor-xbox-btn">
+//							MORE
+//						</a>
+//			 		</div>
+//		 		</div>
+//		 	</li>`);
+
+			$(".M-List").eq(ipu).append('<li class="list-uLi">'+
+    		 		'<div>'+
+    		 			'<figure><img src="'+[item.src]+'"/></figure>'+
+    			 		'<div class="list-uLi-box">'+
+    			 			'<h2>'+[item.title]+'</h2>'+
+    			 			'<span>'+[item.time]+'</span>'+
+    			 			'<span class="width-55"></span>'+
+    			 			'<p>智能家居和普通家具究竟有何不同?  近两年全球正在悄悄的燃起一场智能化的革命</p>'+
+    			 			'<a href="#" class="floor-xbox-btn">'+'MORE'+
+    						'</a>'+
+    			 		'</div>'+
+    		 		'</div>'+
+    		 	'</li>');
+			
 		 	
 		});
 	}
