@@ -1,0 +1,74 @@
+body{
+	background: #f3f3f3;
+}
+.M-sex-box{
+	width: 100vw;
+	min-width: 1220px;
+}
+.M-sex-diu{
+	width: 50.7vw;
+	/*border: 1px solid #ccc;*/
+	margin: 0 auto;
+}
+.M-box-shou{
+	margin-top: 4.1vw;
+}
+.M-box-shou p{
+	display: inline-block;
+	font-size: 1vw;
+}
+.M-box-shou p:nth-child(1){
+	color: #7C4E23;
+}
+.M-box-shou p:nth-child(2){
+	color: #999999;
+}
+.M-box-shou p:nth-child(3){
+	color: #7C4E23;
+	cursor: pointer;
+}
+.M-box-out{
+	margin-top: 3vw;
+}
+.M-box-out p:nth-child(1){
+	color: #7C4E23;
+	font-size:1vw;
+	line-height: 1.3vw;
+}
+.M-box-out p:nth-child(2){
+	font-size: 1vw;
+	color: #999999;
+	line-height: 1.3vw;
+}
+.M-box-woe{
+	margin-top: 1.7vw;
+}
+.M-box-woe h2{
+	font-size: 2.6vw;
+}
+.M-br{
+	width: 53.2vw;
+	height: 0.1vw;
+	background: #999999;
+	margin-top: 3.7vw;
+}
+.M-text-details{
+	margin-top: 3.9vw;
+	box-sizing: border-box;
+	padding:0 1.7vw 0 4.4vw;
+}
+.M-text-details p{
+	color: #999999;
+	font-size: 1vw;
+	
+	line-height:1.7vw;
+}
+.M-details-img1{
+	width:100%;
+	margin-top: 4vw;
+}
+.M-details-img2{
+	width: 100%;
+	margin-top: 3vw;
+}
+

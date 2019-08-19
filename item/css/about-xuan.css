@@ -1,0 +1,74 @@
+.page-banner{
+	width: 100%;
+	min-width: 1200px;
+	height: 8vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.banner-img>li img{
+	display: block;
+	width: 100%;
+	
+}
+.pageyTypearea{
+	width: 86%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.banner-img>li{
+	width: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+}
+.banner-img>li.active{
+	display: block;
+}
+.banner-title{
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:#fffefe;
+	font-family: MicrosoftYaHeiLight;
+	font-size: 2vw;
+}
+.banner-title h1{
+	margin-bottom: 1vw;
+	
+}
+.page-title{
+	width: 31vw;
+	height: 9vw;
+	line-height: 9vw;
+	font-size: 2vw;
+	font-weight: bold;
+	color: #7c4e23;
+	text-align: center;
+	margin: 2vw auto;
+	font-family: MicrosoftYaHeiLight;
+	background: url(../images/gen/03/bg.png) no-repeat ;
+	background-size: cover;
+}
+.page-detail-text{
+	padding: 0 2vw;
+}
+.page-detail-text>li{
+	text-indent: 2vw;
+	margin-bottom: 3vw;
+	color: #666666;
+	line-height: 2vw;
+}
+.page-detail-img{
+	width: 100%;
+	height: 29vw;
+	margin-bottom: 4vw;
+}
+.page-detail-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
