@@ -83,13 +83,13 @@
 
 			$(".M-List").eq(ipu).append('<li class="list-uLi">'+
     		 		'<div>'+
-    		 			'<figure><img src="'+[item.src]+'"/></figure>'+
+    		 			'<figure><a href="details.html"><img src="'+[item.src]+'"/></a></figure>'+
     			 		'<div class="list-uLi-box">'+
     			 			'<h2>'+[item.title]+'</h2>'+
     			 			'<span>'+[item.time]+'</span>'+
     			 			'<span class="width-55"></span>'+
     			 			'<p>智能家居和普通家具究竟有何不同?  近两年全球正在悄悄的燃起一场智能化的革命</p>'+
-    			 			'<a href="#" class="floor-xbox-btn">'+'MORE'+
+    			 			'<a href="details.html" class="floor-xbox-btn">'+'MORE'+
     						'</a>'+
     			 		'</div>'+
     		 		'</div>'+
