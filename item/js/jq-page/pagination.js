@@ -36,9 +36,6 @@ var pagination = pagination || {};
         },
         bindEvent: function(){
             var that = this;
-		
-		
-		
 			 $(that._wrapid).off("click")
             /*页码点击*/
             $(that._wrapid).on('click','.pagenum',function(){
