@@ -51,7 +51,7 @@ $(function(){
 			
 			$(".product-list").css({width:num/4*86+"vw"})
 			//分页器
-				productData.page(num);			
+			productData.page(num);			
 		});
 		return false;
 	})
