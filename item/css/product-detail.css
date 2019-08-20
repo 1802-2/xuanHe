@@ -125,19 +125,14 @@
 .detail-text-area-top>p{
 	display: flex;
 	color:#333333;
-<<<<<<< HEAD
 	width:12%;
-=======
-	width:12.5%;
->>>>>>> b9813e6d49e9cd31ed766e7c9d6b29b9d3e9a201
 	margin-right: 2vw;
-	
 }
 .detail-text-area-top>p span{
 	width: 4vw;
 }
 .detail-text-area-top>ul{
-	width:88%;
+	width:80%;
 }
 .detail-text-area-top>ul>li{
 	text-indent:2vw;
