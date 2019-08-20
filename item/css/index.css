@@ -772,7 +772,7 @@ a{
 	position: absolute;
 	bottom: 0;
 	text-align: justify;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.4);
 	color:white;
 	font-size: 12px;
 	padding: 2% 3%;
@@ -792,17 +792,22 @@ a{
 	display: inline-block;
 	line-height: 1.5vw;
 	font-size: 1vw;
+	margin-top: 0.4vw;
 }
 .x-four-right-mb>div:nth-child(2) .x-btn{
 	display: inline-block;
 	color: white;
 	background: rgba(0,0,0,0.5);
-	border: none;
-	outline: none;
+	text-align: center;
 	width: 10%;
 	border: 1px solid white;
+	height: 1vw;
+	float: right;
+	line-height: 1vw;
 }
-
+.x-fourmb3{
+	color: lightgray;
+}
 /* 第五部分 */
 .x-five>img{
 	width: 100%;
