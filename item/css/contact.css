@@ -1,6 +1,10 @@
+body{
+}
 .MM-box{
-	width: 98vw;
+	width: 100%;
 	overflow: hidden;
+	background-color: #000000;
+	
 }
 #M-cont-box{
 	width: 100vw;
@@ -74,8 +78,7 @@
 	font-size: 1.6vw;
 }
 #allMap{
-	width:98vw;
+	width:100%;
 	height:70vh;
 	overflow:hidden;
-		
-	}
+}
