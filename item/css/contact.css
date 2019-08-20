@@ -1,19 +1,17 @@
 body{
+	background-color: #F3F3F3;
 }
 .MM-box{
 	width: 100%;
 	overflow: hidden;
-	background-color: #000000;
-	
 }
 #M-cont-box{
 	width: 100vw;
 	min-width: 1220px;
-	background: #fff;
 }
 .M-cont-header{
 	width:100vw;
-	height: 165px;
+	height: 160px;
 	min-width: 1220px;
 	background:url(../images/mao/5logo.png) no-repeat center center;
 	
@@ -41,20 +39,17 @@ body{
 .M-cont-ulist{
 	width: 100vw;
 	margin-top: 3vw;
-	background: #fff;
+
 	height: 20vw;
 }
 .M-cont-Ul{
 	display: flex;
 	width: 100vw;
 	margin-top:5vw;
-	background: #fff;
 }
 .M-cont-Ul li{
 	width: 33vw;
-	
 	justify-content: center;
-	
 }
 .M-cont-Ul li img{
 	display: block;
