@@ -43,7 +43,7 @@ body{
 	height: 51px;
 	justify-content: center;
 	align-items: center;
-	font-size: 25px;
+	font-size: 2vw;
 	margin-right: 2vw;
 }
 .list li.active{
@@ -91,7 +91,9 @@ body{
 	line-height: 20px;
 }
 .floor-xbox{
-	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	margin-top:72px ;
 }
 .floor-xbox p{
@@ -100,28 +102,7 @@ body{
 	float: left;
 	line-height: 40px;
 }
-.floor-xbox a{
-	width: 98px;
-	height: 35px;
-	border: 1px solid #7C4E23;
-	border-radius: 20px;
-	text-decoration: none;
-	float: right;
-	text-align: center;
-	font-size: 18px;
-	color: #7C4E23;
-	line-height: 35px;
-}
-.floor-xbox-btn:hover{
-	background: #7C4E23;
-	color: #fff;
-}
-.floor-ul-List-wrap{
-	width: 86vw;
-	height: 78vw;
-	overflow: hidden;
-	position: relative;
-}
+
 .floor-ul-List{
 	display: flex;
 	height: 78vw;
@@ -153,6 +134,13 @@ body{
 }
 
 
+
+.floor-ul-List-wrap{
+	width: 86vw;
+	height: 78vw;
+	position: relative;
+	overflow: hidden;
+}
 .list-uLi-box{
 	box-sizing: border-box;
 	padding:40px 20px 0px 20px;
@@ -193,21 +181,53 @@ body{
 	color: #222222;
 	line-height: 28px;
 }
-.floor-xbox-btn{
-	width: 98px;
-	height: 35px;
-	border: 1px solid #7C4E23;
-	border-radius: 20px;
-	text-decoration: none;
-	float: right;
-	text-align: center;
-	font-size: 18px;
-	color: #7C4E23;
-	line-height: 35px;
-}
+
 .list-uLi:hover img{
 	transform: scale(1.1);
 }
 #page{
 	margin:2vw 0;
+}
+
+
+
+.go-product{
+	
+	display:flex;
+	width: 5vw;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.3vw 0;
+	border-radius: 1vw;
+	margin-left:17.5vw ;
+	border: 1px solid  #7c4e23;
+	
+}
+.go-product a{
+	color: #7c4e23;
+	margin-left: 0.4vw;
+}
+.go-product:hover{
+	background: #7c4e23 ;
+}
+.go-product:hover a{
+	color:#fff;
+}
+.carte-right{
+	display: block;
+	width:0;
+	height:0;
+	border-top:5px solid transparent;
+	
+	border-bottom:5px solid transparent;
+	
+	border-left:6px solid #7c4e23;;
+}
+.go-product:hover .carte-right{
+	border-left-color:#fff ;
+}
+.go-detail{
+	margin: 0;
+	min-width: 3vw;
+	height: 1.5vw;
 }

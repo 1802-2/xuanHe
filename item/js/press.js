@@ -89,8 +89,10 @@
     			 			'<span>'+[item.time]+'</span>'+
     			 			'<span class="width-55"></span>'+
     			 			'<p>智能家居和普通家具究竟有何不同?  近两年全球正在悄悄的燃起一场智能化的革命</p>'+
-    			 			'<a href="details.html" class="floor-xbox-btn">'+'MORE'+
-    						'</a>'+
+    			 			'<div class="go-product">'+
+								'<a href="./details.html">MORE</a><span class="carte-right"></span>'+
+									
+							'</div>	'+	
     			 		'</div>'+
     		 		'</div>'+
     		 	'</li>');

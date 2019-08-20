@@ -37,15 +37,17 @@ body{
 	padding-top: 3vw;
 }
 .M-cont-ulist{
-	width: 100vw;
+	width: 86vw;
+	margin: 0 auto;
 	margin-top: 3vw;
-
+	min-width: 1220px;
 	height: 20vw;
 }
 .M-cont-Ul{
 	display: flex;
-	width: 100vw;
+	
 	margin-top:5vw;
+	line-height: 2vw;
 }
 .M-cont-Ul li{
 	width: 33vw;
@@ -53,8 +55,8 @@ body{
 }
 .M-cont-Ul li img{
 	display: block;
-	width: 4.1vw;
-	height: 3.5vw; 
+	height: 3vw;
+	
 	margin: 0 auto;
 }	
 .M-cont-Ul li p{
