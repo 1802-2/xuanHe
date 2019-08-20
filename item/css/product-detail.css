@@ -95,16 +95,18 @@
 	border-bottom: 1px solid #7c4e23;
 	display: flex;
 	line-height: 3vw;
+	overflow:hidden;
+	
 }
 .detail-text-title .caret-top{
 	width:3.6vw;
-	height: 3vw;
+	height: 3.1vw;
 	background: url(../images/gen/02/caret-wrap.png) no-repeat center;
 }
 .detail-text-title .caret-top span{
 	display: block;
 	width: 3.6vw;
-	height: 3vw;
+	height: 3.1vw;
 	background: url(../images/gen/02/caret-inner.png) no-repeat center 1.5vw;
 }
 .detail-text-title h3{
@@ -123,7 +125,7 @@
 .detail-text-area-top>p{
 	display: flex;
 	color:#333333;
-	width:20%;
+	width:12.5%;
 	margin-right: 2vw;
 	
 }
@@ -131,7 +133,7 @@
 	width: 4vw;
 }
 .detail-text-area-top>ul{
-	width:80%;
+	width:88%;
 }
 .detail-text-area-top>ul>li{
 	text-indent:2vw;
@@ -158,14 +160,13 @@
 	display: flex;
 	color:#333333;
 	width:40%;
-	
 }
 .detail-text-area-bottom>ul>li p span {
 	width:4vw;
 	
 }
 .detail-text-area-bottom>ul>li span:nth-child(2){
-width:60%;
+	width:60%;
 }
 /*  */
 .detail-img{
