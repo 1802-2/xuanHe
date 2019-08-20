@@ -1,12 +1,18 @@
+.MM-box{
+	width: 98vw;
+	overflow: hidden;
+}
 #M-cont-box{
 	width: 100vw;
 	min-width: 1220px;
 	background: #fff;
 }
-.M-cont-header img{
-	width: 100vw;
+.M-cont-header{
+	width:100vw;
+	height: 165px;
 	min-width: 1220px;
-	background: #fff;
+	background:url(../images/mao/5logo.png) no-repeat;
+	
 }
 .M-cont-text{
 	width: 100vw;
@@ -68,7 +74,8 @@
 	font-size: 1.6vw;
 }
 #allMap{
-		width:100vw;
-		height:70vh;
-		margin:0 auto;
+	width:98vw;
+	height:70vh;
+	overflow:hidden;
+		
 	}
