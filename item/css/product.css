@@ -107,8 +107,8 @@
 	display: block;
 	width: 100%;
 	height: 100%;
-	transition:1s;
-	-ms-transition:1s;
+	transition:.5s;
+	-ms-transition:.5s;
 }
 
 .product-detail{
@@ -128,8 +128,8 @@
 	content:"";
 	display:block;
 	width:2vw;
-	transition:1s;
-	-ms-transition:1s;
+	transition:.5s;
+	-ms-transition:.5s;
 	border: 1px solid  #7c4e23;
 	position:absolute;
 	bottom:-7px;
@@ -174,7 +174,7 @@
 	
 }
 .product-item:hover figure img{
-	transform:scale(1.5);
+	transform:scale(1.1);
 }
 .product-page{
 	display:flex;
