@@ -1,15 +1,15 @@
 #M-cont-box{
-	width: 100vw;
+	width: 100%;
 	min-width: 1220px;
 	background: #fff;
 }
 .M-cont-header img{
-	width: 100vw;
+	width: 100%;
 	min-width: 1220px;
 	background: #fff;
 }
 .M-cont-text{
-	width: 100vw;
+	width: 100%;
 	min-width: 1220px;
 	height: 9vw;
 	background: url(../images/mao/SINCE.png) no-repeat center center;
@@ -29,14 +29,14 @@
 	padding-top: 3vw;
 }
 .M-cont-ulist{
-	width: 100vw;
+	width: 100%;
 	margin-top: 3vw;
 	background: #fff;
 	height: 20vw;
 }
 .M-cont-Ul{
 	display: flex;
-	width: 100vw;
+	width: 100%;
 	margin-top:5vw;
 	background: #fff;
 }
@@ -68,7 +68,7 @@
 	font-size: 1.6vw;
 }
 #allMap{
-		width:100vw;
+		width:100%;
 		height:70vh;
 		margin:0 auto;
 	}
