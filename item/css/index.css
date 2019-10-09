@@ -1,8 +1,6 @@
 body,html{
 	width: 100%;
-	min-width: 1220px;
 	height: 100%;
-	min-height: 650px;
 }
 a{
 	display: inline-block;
@@ -12,9 +10,7 @@ a{
 .x-box{
 	position: relative;
 	width: 100%;
-	min-width: 1220px;
 	height: 100%;
-	min-height: 650px;
 	overflow: hidden;
 }
 .x-list{
